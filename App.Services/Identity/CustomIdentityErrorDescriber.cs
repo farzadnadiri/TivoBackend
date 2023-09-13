@@ -2,9 +2,7 @@
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2582
-    /// </summary>
+
     public class CustomIdentityErrorDescriber : IdentityErrorDescriber
     {
         public override IdentityError ConcurrencyFailure()
@@ -12,7 +10,6 @@ namespace App.Services.Identity
             return new IdentityError
             {
                 Code = nameof(ConcurrencyFailure),
-                Description = "رکورد جاری پیشتر ویرایش شده‌است و تغییرات شما آن‌را بازنویسی خواهد کرد."
             };
         }
 

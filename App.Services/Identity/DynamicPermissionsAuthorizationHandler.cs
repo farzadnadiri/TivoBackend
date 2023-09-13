@@ -10,9 +10,7 @@ using Microsoft.AspNetCore.Routing;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2581
-    /// </summary>
+   
     public class DynamicPermissionRequirement : IAuthorizationRequirement
     {
     }

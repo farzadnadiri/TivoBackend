@@ -6,9 +6,7 @@ using DNTPersianUtils.Core;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2579
-    /// </summary>
+    
     public class CustomNormalizer : ILookupNormalizer
     {
         public string NormalizeEmail(string email)

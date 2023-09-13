@@ -3,9 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace App.MsTests
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2162
-    /// </summary>
+
     [TestClass]
     public class CustomNormalizerTests
     {

@@ -7,9 +7,7 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace App.DataLayer.Context
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2509
-    /// </summary>
+ 
     public interface IUnitOfWork : IDisposable
     {
         DbSet<TEntity> Set<TEntity>() where TEntity : class;

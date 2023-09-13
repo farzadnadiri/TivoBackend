@@ -14,9 +14,7 @@ using Microsoft.Extensions.Logging;
 
 namespace App.MsTests
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2510
-    /// </summary>
+
     [TestClass]
     public class CoreTests
     {

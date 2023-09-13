@@ -10,10 +10,7 @@ using Microsoft.Extensions.Options;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// Extending the Built-in User Validation
-    /// More info: http://www.dotnettips.info/post/2579
-    /// </summary>
+    
     public class CustomUserValidator : UserValidator<User>
     {
         private readonly ISet<string> _emailsBanList;

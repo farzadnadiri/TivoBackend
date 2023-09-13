@@ -10,9 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// Keep track of on-line users
-    /// </summary>
+  
     public class CustomSecurityStampValidator : SecurityStampValidator<User>
     {
         private readonly IOptions<SecurityStampValidatorOptions> _options;

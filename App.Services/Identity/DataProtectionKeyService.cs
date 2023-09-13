@@ -12,9 +12,7 @@ using Microsoft.Extensions.Logging;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2717/
-    /// </summary>
+    
     public class DataProtectionKeyService : IXmlRepository
     {
         private readonly IServiceProvider _serviceProvider;

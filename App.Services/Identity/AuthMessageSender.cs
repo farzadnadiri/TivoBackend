@@ -7,10 +7,7 @@ using System;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2551
-    /// And http://www.dotnettips.info/post/2564
-    /// </summary>
+  
     public class AuthMessageSender : IEmailSender, ISmsSender
     {
         private readonly IOptionsSnapshot<SiteSettings> _smtpConfig;

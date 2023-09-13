@@ -8,9 +8,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2578
-    /// </summary>
+    
     public class ApplicationRoleStore :
         RoleStore<Role, ApplicationDbContext, int, UserRole, RoleClaim>,
         IApplicationRoleStore

@@ -20,11 +20,7 @@ using App.DataLayer.Configurations;
 
 namespace App.DataLayer.Context
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2577
-    /// and http://www.dotnettips.info/post/2578
-    /// plus http://www.dotnettips.info/post/2491
-    /// </summary>
+
     public class ApplicationDbContext :
         IdentityDbContext<User, Role, int, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>,
         IUnitOfWork

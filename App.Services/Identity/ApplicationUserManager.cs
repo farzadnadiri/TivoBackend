@@ -18,9 +18,7 @@ using DNTCommon.Web.Core;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2578
-    /// </summary>
+   
     public class ApplicationUserManager :
         UserManager<User>,
         IApplicationUserManager

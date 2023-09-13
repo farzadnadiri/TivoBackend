@@ -11,11 +11,7 @@ using Microsoft.Extensions.Logging;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    ///  To register it: services.AddScoped<IClaimsTransformation, ApplicationClaimsTransformation>();
-    ///  How to add existing db user's claims to the user's active directory claims.
-    /// More info: http://www.dotnettips.info/post/2762
-    /// </summary>
+  
     public class ApplicationClaimsTransformation : IClaimsTransformation
     {
         private readonly IApplicationUserManager _userManager;

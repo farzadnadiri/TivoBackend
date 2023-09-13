@@ -6,12 +6,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// Adapted from https://github.com/aspnet/Security/blob/dev/samples/CookieSessionSample/MemoryCacheTicketStore.cs
-    /// to manage large identity cookies.
-    /// More info: http://www.dotnettips.info/post/2581
-    /// And http://www.dotnettips.info/post/2575
-    /// </summary>
+    
     public class MemoryCacheTicketStore : ITicketStore
     {
         private const string KeyPrefix = "AuthSessionStore-";

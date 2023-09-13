@@ -6,10 +6,7 @@ using Microsoft.Extensions.Caching.Distributed;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2581
-    /// And http://www.dotnettips.info/post/2575
-    /// </summary>
+
     public class DistributedCacheTicketStore : ITicketStore
     {
         private const string KeyPrefix = "AuthSessionStore-";

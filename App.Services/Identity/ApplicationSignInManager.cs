@@ -10,9 +10,7 @@ using System;
 
 namespace App.Services.Identity
 {
-    /// <summary>
-    /// More info: http://www.dotnettips.info/post/2578
-    /// </summary>
+   
     public class ApplicationSignInManager :
         SignInManager<User>,
         IApplicationSignInManager
