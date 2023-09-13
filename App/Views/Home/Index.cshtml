@@ -1,0 +1,756 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="تیوو یک پلتفرم ردیابی و دیاگ خودرو جهت استفاده سازمان هاست">
+    <meta name="author" content="رادمان پژوه هوشمند تهران">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>تیوو - ردیاب و دیاگ همراه خودرو</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/swiper.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <link href="/css/front-styles.css" rel="stylesheet">
+    <link href="/css/custom-style.css" rel="stylesheet">
+
+
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="direction: rtl" >
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
+            <!-- Image Logo -->
+            <a class="navbar-brand" style="text-decoration: none; padding-left: 30px;" href="/">ردیاب تیوو</a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fa fa-bars"></span>
+                <span class="navbar-toggler-awesome fa fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">صفحه اصلی <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">امکانات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#details">جزئیات</a>
+                    </li>
+
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link page-scroll" href="#video" >ویدئو</a>
+                     
+                    </li>
+                    <!-- end of dropdown menu -->
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#pricing">قیمت گذاری</a>
+                    </li>
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm" asp-area="Identity" asp-controller="Login" asp-action="Index">ورود به پنل مدیریت</a>
+                </span>
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row" style="direction: rtl">
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="text-container rtl-align">
+                            <h1>ردیاب هوشمند تیوو</h1>
+                            <p class="p-large">از تیوو برای صحبت کردن با اتوموبیل خود استفاده کنید! خطاهای دیاگ رو ببینید و  در هر لحظه از لوکیشن خودرو باخبر شوید</p>
+                            <a class="btn-solid-lg page-scroll" href="#features">امکانات تیوو</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="image-container">
+                            <div class="img-wrapper">
+                                <img class="img-fluid" src="img/header-software-app.png" alt="alternative">
+                            </div> <!-- end of img-wrapper -->
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310"><defs><style>
+                                                                                                                                                 .cls-1 {
+                                                                                                                                                     fill: #5f4def;
+                                                                                                                                                 }
+    </style></defs><title>header-frame</title><path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z" /></svg>
+    <!-- end of header -->
+    <!-- Customers -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/customer-logo-1.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/customer-logo-2.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/customer-logo-3.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/customer-logo-4.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/customer-logo-5.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/customer-logo-6.png" alt="alternative">
+                                </div>
+                            </div> <!-- end of swiper-wrapper -->
+                        </div> <!-- end of swiper container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of customers -->
+    <!-- Description -->
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+               
+                    <h2 class="h2-heading">سیستم های به روز رسانی شده برای بیمه های خودرو</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="img/description-1.png" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">ارسال خطاهای فنی</h4>
+                            <p>با بررسی خطاهای دیاگ مشکلات فنی خودرو به کاربر اعلام می گردد و لاگ آن در سیستم بیمه ای ثبت می شود</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="img/description-2.png" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">مکان یابی لحظه ای خودرو</h4>
+                            <p>برای جلوگیری از صحنه سازی تصادف و مکان یابی خودرو پس از سرقت از این امکان استفاده می گردد</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="img/description-3.png" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">بررسی رفتار راننده</h4>
+                            <p>شدت ترمزها، حرکت با سرعت غیرمجاز، رانندگی خطرناک و غیره به صورت لحظه ای با استفاده از این امکان قابل ثبت است</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of description -->
+    <!-- Features -->
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                 
+                    <h2 class="h2-heading">امکانات</h2>
+                    <p class="p-heading">با توجه به سرعت رشد صنعت بیمه و احساس نیاز در بازار، تصمیم گرفتیم تا پاسخگوی نیازهای متفاوت و جدید باشیم</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="image-container">
+                                <img class="img-fluid" src="img/features-1.png" alt="alternative">
+                            </div> <!-- end of image-container -->
+                        </div> <!-- end of col -->
+                        <div class="col-lg-6">
+                            <div style="direction: rtl" class="text-container">
+                                <h3 style="text-align: right">استفاده و نصب آسان</h3>
+                                <p style="text-align: justify">دستگاه با قابلیت اتصال به پورت دیاگ خودرو، و همچنین برقراری ارتباط با ماهواره های مکان یاب، قابلیت رصد وضعیت و موقعیت خودرو را به صورت لحظه ای داشته و به راحتی قابل نصب می باشد.</p>
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <i class="fa fa-square"></i>
+                                        <div style="text-align: right" class="media-body">تعیین قیمت بیمه با توجه به کیلومتر کارکرد</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fa fa-square"></i>
+                                        <div style="text-align: right" class="media-body">قیمت گذاری بیمه براساس سلامت خودرو</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fa fa-square"></i>
+                                        <div style="text-align: right" class="media-body">قیمت گذاری بیمه با بررسی میزان خطر در رفتار راننده</div>
+                                    </li>
+                                </ul>
+                                @*<a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a>*@
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of col -->
+                    </div> <!-- end of row -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+    <!-- Details Lightboxes -->
+    <!-- Details Lightbox 1 -->
+    <div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="img/details-lightbox.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>List Building</h3>
+                    <hr>
+                    <h5>Core service</h5>
+                    <p>It's very easy to start using Tivo. You just need to fill out and submit the Sign Up Form and you will receive access to the app.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">List building framework</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Easy database browsing</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">User administration</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Automate user signup</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Quick formatting tools</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Fast email checking</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg mfp-close" href="sign-up.html">SIGN UP</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 1 -->
+    <!-- Details Lightbox 2 -->
+    <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="img/details-lightbox.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Campaign Monitoring</h3>
+                    <hr>
+                    <h5>Core service</h5>
+                    <p>It's very easy to start using Tivo. You just need to fill out and submit the Sign Up Form and you will receive access to the app.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">List building framework</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Easy database browsing</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">User administration</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Automate user signup</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Quick formatting tools</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Fast email checking</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg mfp-close" href="sign-up.html">SIGN UP</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 2 -->
+    <!-- Details Lightbox 3 -->
+    <div id="details-lightbox-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="img/details-lightbox.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Analytics Tools</h3>
+                    <hr>
+                    <h5>Core service</h5>
+                    <p>It's very easy to start using Tivo. You just need to fill out and submit the Sign Up Form and you will receive access to the app.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">List building framework</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Easy database browsing</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">User administration</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Automate user signup</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Quick formatting tools</div>
+                        </li>
+                        <li class="media">
+                            <i class="fa fa-square"></i><div class="media-body">Fast email checking</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg mfp-close" href="sign-up.html">SIGN UP</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 3 -->
+    <!-- end of details lightboxes -->
+    <!-- Details -->
+    <div id="details" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div style="direction: rtl; text-align: right" class="text-container">
+                        <h2 >الان زمان مناسب برای استفاده از تکنولوژی در صنعت بیمه است</h2>
+                        <p>با استفاده از تکنولوژی مانیتورینگ لحظه ای، ما  میتوانیم</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fa fa-square"></i>
+                                <div class="media-body">رفتار بیمه شونده را بشناسیم</div>
+                            </li>
+                            <li class="media">
+                                <i class="fa fa-square"></i>
+                                <div class="media-body">پاسخ هایی به نیازهای جدیدش بدهیم</div>
+                            </li>
+                            <li class="media">
+                                <i class="fa fa-square"></i>
+                                <div class="media-body">مشتریان رو هدفتمند انتخاب کنیم</div>
+                            </li>
+                            <li class="media">
+                                <i class="fa fa-square"></i>
+                                <div class="media-body">قیمت بیمه نامه رو به حداقل برسانیم</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="img/details.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details -->
+    <!-- Video -->
+    <div id="video" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+                                <img class="img-fluid" src="img/video-image.png" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                    <div class="p-heading">بهترین مسیر برای کاهش هزینه بیمه سالیانه رانندگی صحیح و انجام سرویس های دوره ای است</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of video -->
+    <!-- Pricing -->
+    <div id="pricing" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+          
+                    <h2 class="h2-heading">قیمت گذاری و جوایز</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card-->
+                    <div class="card">
+                        <div style="direction: rtl; text-align: right" class="card-body">
+                            <div class="card-title">کیلومتر کارکرد سالیانه</div>
+      
+                            <div class="divider"></div>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">زیر 10.000 کیلومتر</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">زیر 20.000 کیلومتر</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">زیر 30.000 کیلومتر</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">بیشتر از 30.000 کیلومتر</div>
+                                </li>
+                              
+                            </ul>
+                          
+                        </div>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+                    <!-- Card-->
+                    <div class="card">
+                        <div style="direction: rtl; text-align: right" class="card-body">
+                            <div class="card-title">انجام سرویس های دوره ای</div>
+          
+                            <div class="divider"></div>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">انجام تمام سرویس های سالیانه در نمایندگی</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">از دست رفتن یک سرویس در نمایندگی</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">از دست رفتن بیش از یک سرویس در نمایندگی</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">برطرف نکردن خطاهای دیاگ</div>
+                                </li>
+                             
+                            </ul>
+                       
+                        </div>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+                    <!-- Card-->
+                    <div class="card">
+                        <!--<div class="label">
+                            <p class="best-value">Best Value</p>
+                        </div> -->
+                        <div style="direction: rtl; text-align: right" class="card-body">
+                            <div class="card-title">رفتار راننده</div>
+                            <div class="divider"></div>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">نداشتن جریمه الصاقی</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">نداشتن جریمه دوربین</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">داشتن تایید رانندگی ایمن</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fa fa-check"></i><div class="media-body">داشتن تایید رانندگی سالم</div>
+                                </li>
+
+
+                            </ul>
+                         
+                        </div>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of pricing -->
+    <!-- Testimonials -->
+    <div class="slider-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Text Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container text-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img class="img-fluid" src="img/iman.jpg" alt="alternative">
+                                    </div> <!-- end of image-wrapper -->
+                                    <div class="text-wrapper">
+                                        <div class="testimonial-text">I started to use Tivo with the free trial about a year ago and never stopped since then. It does all the repeating marketing tasks and allows me to focus on core development activities like new product research and design. I love it and recommend it to everyone.</div>
+                                        <div class="testimonial-author">Jude Thorn - Online Marketer</div>
+                                    </div> <!-- end of text-wrapper -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img class="img-fluid" src="img/saman.jpg" alt="alternative">
+                                    </div> <!-- end of image-wrapper -->
+                                    <div class="text-wrapper">
+                                        <div class="testimonial-text">Awesome features for the money. I never thought such a low ammount of money would bring me so many leads per month. Before Tivo I used the services of an agency which cost 10x more and delivered far less. Highly recommended to marketers focused on results.</div>
+                                        <div class="testimonial-author">Roy Smith - Developer</div>
+                                    </div> <!-- end of text-wrapper -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img class="img-fluid" src="img/farhad.jpg" alt="alternative">
+                                    </div> <!-- end of image-wrapper -->
+                                    <div class="text-wrapper">
+                                        <div class="testimonial-text">Tivo is the best marketing automation app for small and medium sized business. It understands the mindset of young entrepreneurs and provides the necessary data for wise marketing decisions. Just give it a try and you will definitely not regret spending your time.</div>
+                                        <div class="testimonial-author">Marsha Singer - Online Marketer</div>
+                                    </div> <!-- end of text-wrapper -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img class="img-fluid" src="img/farzad.jpg" alt="alternative">
+                                    </div> <!-- end of image-wrapper -->
+                                    <div class="text-wrapper">
+                                        <div class="testimonial-text">Tivo is one of the greatest marketing automation apps out there. I especially love the Reporting Tools module because it gives me such a great amount of information based on little amounts of input gathered in just few weeks of light weight usage. Recommended!</div>
+                                        <div class="testimonial-author">Ronda Louis - Online Marketer</div>
+                                    </div> <!-- end of text-wrapper -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of text slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-2 -->
+    <!-- end of testimonials -->
+    <!-- Newsletter -->
+    <div class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                   
+                        <h2>از آخرین بروزرسانی های نرم افزار و اخبار مرتبط مطلع باشید</h2>
+
+                        <!-- Newsletter Form -->
+                        <form id="newsletterForm" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="nemail" required>
+                                <label class="label-control" for="nemail">ایمیل</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                           
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">عضویت</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="nmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                        <!-- end of newsletter form -->
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="icon-container">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form -->
+    <!-- end of newsletter -->
+    <!-- Footer -->
+    <svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79"><defs><style>
+                                                                                                                                                .cls-2 {
+                                                                                                                                                    fill: #5f4def;
+                                                                                                                                                }
+    </style></defs><title>footer-frame</title><path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)" /></svg>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 rtl-align">
+                    <div class="footer-col last">
+                        <h4>تماس</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+
+                                <div class="media-body">تهران، میدان آزادی، ابتدای جاده مخصوص کرج، جنب ایستگاه مترو بیمه، پلاک 31، کارخانه نوآوری، سوله شماره 3</div>
+                            </li>
+                            <li class="media">
+
+                                <a class="white" href="mailto:contact@00r.ir">contact@00r.ir</a>      <span style="padding-left: 10px; padding-right: 10px;"></span>     <a class="white" href="#your-link">www.00r.ir</a>
+
+                            </li>
+      
+
+                       
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+
+
+                <div class="col-md-4 rtl-align">
+                    <div class="footer-col middle">
+                        <h4>همکاران ما</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                            
+                                <div class="media-body">این پروژه یکی از طرح های اجرا شده توسط <a class="white" target="_blank" href="http://plannet.ir">شبکه نوآفرینی پلنت</a> است، پلنت در پی ارائه راهکارهای نوآورانه به بازیگران صنعت بیمه است تا افزایش رضایت خاطر و آرامش جامعه را با تقویت این صنعت و کاهش قیمت برای مشتریان فراهم کند</div>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4 rtl-align">
+                    <div class="footer-col first">
+                        <h4>درباره تیوو</h4>
+                        <p class="p-small">تیوو یک دستگاه جانبی است که به کمک آن میتوانید اطلاعات خودرو خود را در هر لحظه مانیتور کنید، اطلاعات لوکیشن و جزئیات کامپیوتر خودرو به کمک تیوو در اختیار شماست </p>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small"><a href="https://radmania.ir">قدرت گرفته از رادمان پژوه هوشمند تهران</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+    <!-- Scripts -->
+    <script src="/js/plugins/jquery/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="/js/plugins/bootstrap/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="/js/front-scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

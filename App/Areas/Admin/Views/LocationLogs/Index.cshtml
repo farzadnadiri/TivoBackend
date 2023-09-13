@@ -1,0 +1,30 @@
+﻿@using NonFactors.Mvc.Grid
+@model IQueryable<App.Entities.LocationLog>
+@{
+    ViewData["Title"] = "گزارش لاگ ها";
+}
+
+<div class="card">
+
+
+    @(Html
+        .Grid(Model)
+        .Build(columns =>
+        {
+
+            columns.Add(model => $"{model.Car.Type} - {model.Car.Color}").Titled("خودرو");
+            columns.Add(model => model.Car.Plate).Titled("پلاک");
+            columns.Add(model => model.Speed).Titled("سرعت");
+            columns.Add(model => model.Odometer).Titled("مسافت");
+            columns.Add(model => $"{model.Lat} - {model.Long}").Titled("طول و عرض جغرافیایی");
+            columns.Add(model => model.Time).Titled("زمان");
+            columns.Add(model => $"<a class=\"btn btn-danger\" style=\"color:white\"  href=\"\\Admin\\LocationLogs\\Delete\\{model.Id}\">حذف</a> <a class=\"btn btn-info\" href=\"\\Admin\\LocationLogs\\Details\\{model.Id}\">نمایش</a>").Encoded(false);
+        })
+        .Using(GridFilterMode.Header)
+        .Empty("هیچ آیتمی یافت نشد")
+        .Filterable()
+        .Sortable()
+        .Pageable()
+        )
+
+</div>

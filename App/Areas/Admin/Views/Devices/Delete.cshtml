@@ -1,0 +1,52 @@
+﻿@model App.ViewModels.DeviceViewModel
+
+@{
+    ViewData["Title"] = "حذف دستگاه";
+}
+
+<div class="card">
+    <div class="card-body">
+      
+
+        <div class="form-group row">
+            <label asp-for="MacAddress" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <p dir="rtl" class="form-control" >@Model.MacAddress</p>
+           
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Version" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <p dir="rtl" class="form-control" >@Model.Version</p>
+          
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="FirmwareVersion" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <p dir="rtl"  class="form-control" >@Model.FirmwareVersion</p>
+             
+            </div>
+        </div>
+
+    </div>
+    <form asp-action="DeleteConfirm" method="post">
+
+        <div class="form-group row">
+
+            <div class="col-md-10">
+                <input dir="rtl" asp-for="Id" class="form-control" />
+    
+            </div>
+        </div>
+
+        <div class="form-group row">
+
+            <div class="col-md-10 offset-md-2">
+                <button class="btn btn-danger" type="submit">حذف اطلاعات</button>     <a class="btn btn-info" asp-area="Admin" asp-controller="Devices" asp-action="Index">بازگشت به لیست</a>
+            </div>
+        </div>
+    </form>
+
+</div>

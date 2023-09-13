@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NoWarn>RCS1090</NoWarn>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.Common\App.Common.csproj" />
+    <ProjectReference Include="..\App.DataLayer.MSSQL\App.DataLayer.MSSQL.csproj" />
+    <ProjectReference Include="..\App.DataLayer\App.DataLayer.csproj" />
+    <ProjectReference Include="..\App.Entities\App.Entities.csproj" />
+    <ProjectReference Include="..\App.Services\App.Services.csproj" />
+    <ProjectReference Include="..\App.ViewModels\App.ViewModels.csproj" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.5" />
+  </ItemGroup>
+</Project>

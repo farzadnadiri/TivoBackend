@@ -1,0 +1,58 @@
+﻿@model App.ViewModels.CarViewModel
+@{
+    ViewData["Title"] = "افزودن خودرو";
+
+}
+
+<div class="card">
+    
+
+    <form class="card-body" asp-action="Create" method="post">
+
+        <div class="form-group row">
+            <label asp-for="Driver" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <input dir="rtl" asp-for="Driver" class="form-control" />
+                <span asp-validation-for="Driver" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Plate" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <input dir="rtl" asp-for="Plate" class="form-control" />
+                <span asp-validation-for="Plate" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Type" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <input dir="rtl" asp-for="Type" class="form-control" />
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Color" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <input dir="rtl" asp-for="Color" class="form-control" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="DeviceId" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+           
+                @Html.DropDownListFor(x => Model.DeviceId, (List<SelectListItem>)ViewBag.DevicesList, htmlAttributes: new { @class = "form-control"})
+                <span asp-validation-for="DeviceId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+
+            <div class="col-md-10 offset-md-2">
+                <button class="btn btn-success" type="submit">ثبت اطلاعات</button>
+            </div>
+        </div>
+    </form>
+
+</div>

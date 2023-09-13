@@ -1,0 +1,36 @@
+﻿@using NonFactors.Mvc.Grid
+@model IQueryable<App.Entities.Car>
+@{
+    ViewData["Title"] = "لیست خودروها";
+}
+<a class="btn btn-success col-md-2 offset-md-10 newEntityBtn" asp-area="Admin" asp-controller="Cars" asp-action="Create">ثبت خودرو جدید</a>
+
+<div class="card">
+
+
+
+
+    @(Html
+        .Grid(Model)
+        .Build(columns =>
+        {
+
+            columns.Add(model => model.Driver).Titled("راننده");
+            columns.Add(model => model.Plate).Titled("شماره پلاک");
+            columns.Add(model => model.Type).Titled("نوع خودرو");
+            columns.Add(model => model.Color).Titled("رنگ خودرو");
+            columns.Add(model => model.Device.MacAddress).Titled("سریال دستگاه");
+            columns.Add(model => $"<a class=\"btn btn-danger\" style=\"color:white\"  href=\"\\Admin\\Cars\\Delete\\{model.Id}\">حذف</a> <a class=\"btn btn-warning\" href=\"\\Admin\\Cars\\Edit\\{model.Id}\">ویرایش</a> <a class=\"btn btn-info\" href=\"\\Admin\\Cars\\Details\\{model.Id}\">نمایش</a>").Encoded(false);
+
+    })
+    .Using(GridFilterMode.Header)
+    .Empty("هیچ آیتمی یافت نشد")
+    .Filterable()
+    .Sortable()
+    .Pageable()
+    )
+    
+    
+    
+
+</div>

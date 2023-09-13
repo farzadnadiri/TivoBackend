@@ -1,0 +1,57 @@
+﻿@using Microsoft.Extensions.Configuration;
+@{
+
+    var ApplicationProperties = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("ApplicationProperties");
+
+    var ApplicationName = ApplicationProperties["Name"];
+    var ApplicationVersion = ApplicationProperties["Version"];
+
+    var pageTitle = ViewData["Title"] ?? ApplicationName;
+
+}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+
+
+    <title>@ApplicationName | @pageTitle</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="/css/googleapis.css" rel="stylesheet">
+
+    <!-- bootstrap rtl -->
+    <link rel="stylesheet" href="/css/bootstrap-rtl.min.css">
+    <!-- template rtl version -->
+    <link rel="stylesheet" href="/css/custom-style.css">
+
+</head>
+<body style="background-color: #5F4DEE" class="hold-transition">
+    <h2 style="text-align: center; color: #fff; margin-top: 50px;">@ApplicationName</h2>
+    <div class="wrapper row">
+
+        <div class="col-md-6 offset-md-3 col-sm-12">
+
+            @RenderBody()
+        </div>
+
+
+    </div>
+
+<script src="/plugins/jquery/jquery.min.js"></script>
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/js/adminlte.min.js"></script>
+    <script src="~/js/site.min.js" type="text/javascript" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

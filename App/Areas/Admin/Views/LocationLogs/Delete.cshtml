@@ -1,0 +1,115 @@
+﻿@using App.ViewModels
+@model App.ViewModels.LocationLogViewModel
+
+
+@{
+    ViewData["Title"] = "حذف لاگ";
+    CarViewModel car = ViewBag.Car;
+}
+
+<div id="mapid" style="height: 500px;">
+
+</div>
+
+
+<div class="card">
+    <div class="card-body">
+
+
+
+
+
+
+
+        <div class="form-group row">
+            <label asp-for="@car.Type" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <h5 class="form-control" dir="rtl">@car.Type</h5>
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="@car.Color" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <h5 class="form-control" dir="rtl">@car.Color</h5>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="@car.Plate" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <h5 class="form-control" dir="rtl">@car.Plate</h5>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Speed" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <h5 class="form-control" dir="rtl">@Model.Speed</h5>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Time" class="col-md-2 col-form-label text-md-left"></label>
+            <div class="col-md-10">
+                <h5 class="form-control" dir="rtl">@Model.Time</h5>
+            </div>
+        </div>
+
+
+
+        <form asp-action="DeleteConfirm" method="post">
+
+            <div class="form-group row">
+                <div class="col-md-10">
+                    <input dir="rtl" asp-for="Id" class="form-control" />
+
+                </div>
+            </div>
+
+            <div class="form-group row">
+
+                <div class="col-md-10 offset-md-2">
+                    <button class="btn btn-danger" type="submit">حذف اطلاعات</button>     <a class="btn btn-info" asp-area="Admin" asp-controller="LocationLogs" asp-action="Index">بازگشت به لیست</a>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+@section Scripts
+{
+
+    <script>
+
+        var marker = null;
+        var pose = [@Model.Lat,@Model.Long];
+
+        var mymap = L.map('mapid', {
+            attributionControl: false
+        }).setView([@Model.Lat,@Model.Long], 14);
+
+
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmFyemFkbmFkaXJpIiwiYSI6ImNqdWNhb3dncDBqOGM0NG1oOHgybWMya2kifQ.2SW2-P37tnM5VusNDTfUHw', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 18,
+            minZoom: 7,
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoiZmFyemFkbmFkaXJpIiwiYSI6ImNqdWNhb3dncDBqOGM0NG1oOHgybWMya2kifQ.2SW2-P37tnM5VusNDTfUHw'
+        }).addTo(mymap);
+
+
+        
+        function addMarkerToPose() {
+
+            if (marker) {
+                mymap.removeLayer(marker);
+            }
+            marker = L.marker(pose,{rotationAngle: @Model.Direction}).bindPopup("<b>@car.Type-@car.Color</b><br>@car.Plate <br> سرعت @Model.Speed کیلومتر").openPopup().addTo(mymap);
+        }
+
+        addMarkerToPose();
+
+    </script>
+
+}

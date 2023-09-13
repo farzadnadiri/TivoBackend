@@ -1,0 +1,30 @@
+﻿@{
+
+    ViewData["Title"] = "یافت نشد!";
+    this.Context.Response.StatusCode = (int)HttpStatusCode.Gone;
+
+    if (!User.Identity.IsAuthenticated)
+    {
+        Layout = "_LoginRegisterLayout";
+    }
+
+}
+
+<div class="mt-5">
+    <div class="alert alert-warning">
+        <h1><span aria-hidden="true" class="fa fa-warning"></span>خطا</h1>
+        <h3>اطلاعات درخواستی یافت نشد.</h3>
+    </div>
+    
+    <div align="center">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a asp-controller="Home" asp-action="Index" asp-area="Identity" class="btn btn-warning">بازگشت به پیشخوان</a>
+        }
+        else
+        {
+            <a asp-controller="Home" asp-action="Index" class="btn btn-warning">بازگشت به صفحه اصلی</a>
+        }
+
+    </div>
+</div>

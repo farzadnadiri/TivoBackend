@@ -1,0 +1,28 @@
+﻿@using NonFactors.Mvc.Grid
+@model IQueryable<App.Entities.Device>
+@{
+    ViewData["Title"] = "لیست دستگاه ها";
+}
+<a class="btn btn-success col-md-2 offset-md-10 newEntityBtn" asp-area="Admin" asp-controller="Devices" asp-action="Create">ثبت دستگاه جدید</a>
+<div class="card">
+
+
+    @(Html
+        .Grid(Model)
+        .Build(columns =>
+        {
+
+            columns.Add(model => model.MacAddress).Titled("مک آدرس");
+            columns.Add(model => model.Version).Titled("نسخه سخت افزار");
+            columns.Add(model => model.FirmwareVersion).Titled("نسخه نرم افزار");
+            columns.Add(model => $"<a class=\"btn btn-danger\" style=\"color:white\"  href=\"\\Admin\\Devices\\Delete\\{model.Id}\">حذف</a> <a class=\"btn btn-warning\" href=\"\\Admin\\Devices\\Edit\\{model.Id}\">ویرایش</a>").Encoded(false);
+
+        })
+        .Using(GridFilterMode.Header)
+        .Empty("هیچ آیتمی یافت نشد")
+        .Filterable()
+        .Sortable()
+        .Pageable()
+        )
+
+</div>

@@ -1,0 +1,62 @@
+﻿@model App.ViewModels.CarViewModel
+
+@{
+    ViewData["Title"] = "حذف خودرو";
+
+}
+<div class="card">
+    <div class="card-body">
+        
+
+    <div class="form-group row">
+        <label asp-for="Driver" class="col-md-2 col-form-label text-md-left"></label>
+        <div class="col-md-10">
+            <h5 class="form-control" dir="rtl">@Model.Driver</h5>
+
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Plate" class="col-md-2 col-form-label text-md-left"></label>
+        <div class="col-md-10">
+            <h5 class="form-control" dir="rtl" >@Model.Plate</h5>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Type" class="col-md-2 col-form-label text-md-left"></label>
+        <div class="col-md-10">
+            <h5 class="form-control" dir="rtl">@Model.Type</h5>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Color" class="col-md-2 col-form-label text-md-left"></label>
+        <div class="col-md-10">
+            <h5 class="form-control" dir="rtl">@Model.Color</h5>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="DeviceId" class="col-md-2 col-form-label text-md-left"></label>
+        <div class="col-md-10">
+            <h5 class="form-control" dir="rtl" >@ViewBag.Device.MacAddress</h5>
+        </div>
+    </div>
+
+    <form  asp-action="DeleteConfirm" method="post">
+
+        <div class="form-group row">
+            <div class="col-md-10">
+                <input dir="rtl" asp-for="Id" class="form-control" />
+
+            </div>
+        </div>
+
+        <div class="form-group row">
+
+            <div class="col-md-10 offset-md-2">
+                <button class="btn btn-danger" type="submit">حذف اطلاعات</button>     <a class="btn btn-info" asp-area="Admin" asp-controller="Cars" asp-action="Index">بازگشت به لیست</a>
+            </div>
+        </div>
+    </form>
+
+</div>
+</div>
